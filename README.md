@@ -8,6 +8,8 @@
 - Movies data are fetched from TMDB
 - Customs hooks to have separation of concern
 - fetching movie trailer from youtube embed
+- Gpt search feature , user can search any type of movie via the gpt search
+- Multi language feature on the search bar
 - deployed on Firebase Hosting
 
 # features

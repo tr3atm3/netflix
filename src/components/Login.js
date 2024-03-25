@@ -125,7 +125,10 @@ const Login = () => {
         </button>
         <p className="my-6">
           {isSignInForm ? "New to Netflix? " : "Already have an Account? "}{" "}
-          <span className="cursor-pointer" onClick={toggleSignInForm}>
+          <span
+            className="cursor-pointer font-bold text-xl"
+            onClick={toggleSignInForm}
+          >
             {isSignInForm ? "Sign up" : "Sign In"}
           </span>
         </p>
