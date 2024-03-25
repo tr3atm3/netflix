@@ -3,6 +3,12 @@
 - Initialized our app using create-react-app.
 - Tailwind css to style out web App.
 - React Router to navigate through the app.
+- Authenticating user using firebase Authentication
+- Redux to manage state of user account sign in/sign out & Movie Data.
+- Movies data are fetched from TMDB
+- Customs hooks to have separation of concern
+- fetching movie trailer from youtube embed
+- deployed on Firebase Hosting
 
 # features
 
