@@ -10,6 +10,7 @@
 - fetching movie trailer from youtube embed
 - Gpt search feature , user can search any type of movie via the gpt search
 - Multi language feature on the search bar
+- Responsive
 - deployed on Firebase Hosting
 
 # features

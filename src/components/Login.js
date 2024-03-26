@@ -93,7 +93,7 @@ const Login = () => {
     <div className="">
       <Header />
       <form
-        className="absolute w-[28rem] mx-auto left-0 right-0 top-[9rem] text-white bg-black bg-opacity-70 flex-col flex py-8 px-14 rounded-lg"
+        className="absolute w-[90%] md:w-[28rem] mx-auto left-0 right-0 top-[9rem] text-white bg-black bg-opacity-70 flex-col flex py-8 px-14 rounded-lg"
         onSubmit={handleFormSubmit}
       >
         <h1 className="text-3xl my-4 font-bold ">
@@ -133,9 +133,9 @@ const Login = () => {
           </span>
         </p>
       </form>
-      <div className="w-full h-[100vh]">
+      <div className="w-full h-[100vh] ">
         <img
-          className="w-full h-[100vh]"
+          className="w-full h-[100vh] object-cover"
           src={Background_img}
           alt="background of different movie"
         />

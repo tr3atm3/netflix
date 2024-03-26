@@ -48,7 +48,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full absolute py-4 px-8 bg-gradient-to-b from-black flex justify-between items-center z-10">
+    <div className="w-full absolute py-4 px-8 bg-gradient-to-b from-black flex flex-col md:flex-row justify-between items-center z-10">
       <img className="w-36" src={LOGO_URL} alt="app logo" />
       {user && <p className="text-white">{user.displayName}</p>}
       {user && (

@@ -46,9 +46,9 @@ const GptSearchBar = () => {
     }
   };
   return (
-    <div className="pt-[12%] flex justify-center flex-col items-center">
+    <div className="pt-[50%] md:pt-[12%] flex justify-center flex-col items-center">
       <form
-        className=" w-1/2 grid grid-cols-12 bg-black bg-opacity-60 rounded-lg"
+        className="w-full md:w-1/2 grid grid-cols-12 bg-black bg-opacity-60 rounded-lg"
         onSubmit={handleFormSubmit}
       >
         <input
@@ -62,7 +62,7 @@ const GptSearchBar = () => {
         </button>
       </form>
       {errMessage && (
-        <p className="text-white text-xl w-[60%] p-8 mt-8 bg-black bg-opacity-60 rounded-lg">
+        <p className="text-white text-xl md:w-[60%] w-full p-4 md:p-8 mt-8 bg-black bg-opacity-60 rounded-lg">
           {errMessage}
         </p>
       )}
