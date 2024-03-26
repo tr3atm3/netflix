@@ -7,20 +7,18 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
+
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { Background_img } from "../utils/constants";
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState(null);
-  const navigate = useNavigate();
+
   const dispatch = useDispatch();
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
-
-  console.log(auth);
 
   //handling click
   const toggleSignInForm = () => {
@@ -61,7 +59,6 @@ const Login = () => {
               // ...
               setErrorMessage(error.message);
             });
-          console.log(user);
         })
         .catch((error) => {
           //   const errorCode = error.code;
@@ -80,7 +77,6 @@ const Login = () => {
           // Signed in
           const user = userCredential.user;
           // ...
-          console.log(user);
         })
         .catch((error) => {
           //   const errorCode = error.code;
