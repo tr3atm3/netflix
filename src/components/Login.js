@@ -20,6 +20,11 @@ const Login = () => {
   const password = useRef(null);
   const name = useRef(null);
 
+  const handleGuestClick = function () {
+    email.current.value = "padhna.wala@gmail.com";
+    password.current.value = "Mynetflix@1";
+  };
+
   //handling click
   const toggleSignInForm = () => {
     setIsSignInForm((prev) => !prev);
@@ -127,6 +132,12 @@ const Login = () => {
           >
             {isSignInForm ? "Sign up" : "Sign In"}
           </span>
+        </p>
+        <p
+          className="cursor-pointer text-lg font-bold"
+          onClick={handleGuestClick}
+        >
+          Guest Login
         </p>
       </form>
       <div className="w-full h-[100vh] ">
